@@ -1,0 +1,51 @@
+{
+  "name": "github-issue-creator",
+  "description": "Create GitHub issues from TODO/FIXME comments in code",
+  "version": "1.0.0",
+  "entry": "index.js",
+  "commands": [
+    {
+      "name": "scan-todos",
+      "description": "Scan codebase for TODO/FIXME comments and create issues",
+      "args": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Directory to scan (default: .)",
+          "default": "."
+        },
+        {
+          "name": "dry-run",
+          "type": "boolean",
+          "description": "Print issues without creating them",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "create-issue",
+      "description": "Create a single GitHub issue",
+      "args": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Issue title",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Issue body",
+          "required": true
+        },
+        {
+          "name": "labels",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Labels to apply",
+          "default": ["todo"]
+        }
+      ]
+    }
+  ]
+}

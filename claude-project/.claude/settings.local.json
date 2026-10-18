@@ -1,0 +1,20 @@
+{
+  "env": {},
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "hooks": {
+    "PreToolUse": [],
+    "PostToolUse": [],
+    "UserPromptSubmit": [],
+    "Notification": [],
+    "Stop": []
+  },
+  "disabledMcpjsonServers": [
+    "playwright"
+  ]
+}

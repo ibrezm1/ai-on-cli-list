@@ -1,0 +1,54 @@
+{
+  "name": "code-quality",
+  "description": "Run code quality checks (lint, type-check, test)",
+  "version": "1.0.0",
+  "entry": "index.js",
+  "commands": [
+    {
+      "name": "check",
+      "description": "Run all quality checks",
+      "args": [
+        {
+          "name": "fix",
+          "type": "boolean",
+          "description": "Auto-fix lint issues",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "lint",
+      "description": "Run ESLint only",
+      "args": [
+        {
+          "name": "fix",
+          "type": "boolean",
+          "description": "Auto-fix issues",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "typecheck",
+      "description": "Run TypeScript type checking"
+    },
+    {
+      "name": "test",
+      "description": "Run test suite",
+      "args": [
+        {
+          "name": "watch",
+          "type": "boolean",
+          "description": "Run in watch mode",
+          "default": false
+        },
+        {
+          "name": "coverage",
+          "type": "boolean",
+          "description": "Generate coverage report",
+          "default": false
+        }
+      ]
+    }
+  ]
+}

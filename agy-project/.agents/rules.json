@@ -1,0 +1,18 @@
+{
+  "inherits": [
+    {
+      "path": "~/.gemini/config/rules.json",
+      "exclude": [
+        "deprecated-.*"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "path": ".agents/rules",
+      "include_only": [
+        "*.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Playwright MCP cache
+.playwright-mcp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+
+
+# Test/coverage (if added later)
+coverage/
+.nyc_output/

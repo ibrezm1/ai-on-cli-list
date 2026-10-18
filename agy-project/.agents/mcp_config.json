@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "sqlite-helper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "--db-path",
+        "./data/sample.db"
+      ],
+      "env": {
+        "SQLITE_READONLY": "true"
+      }
+    },
+    "fetch-service": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ]
+    },
+    "internal-api": {
+      "serverUrl": "https://mcp.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "disabledTools": [
+        "delete_record"
+      ]
+    }
+  }
+}
